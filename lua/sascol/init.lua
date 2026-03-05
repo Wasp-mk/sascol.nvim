@@ -12,8 +12,12 @@ function M.load()
 
   local groups = {
     -- UI Groups
-    CursorColumn = { bg = p.main.grey1 },
-    CursorLine = { bg = p.main.grey1 },
+    ColorColumn = { bg = p.main.darkGrey },
+
+    Conceal = { fg = p.main.grey },
+
+    CursorColumn = { bg = p.main.darkGrey },
+    CursorLine = { bg = p.main.darkGrey },
     CursorLineNr = { fg = p.main.gold },
 
     DiagnosticError = { fg = p.main.red },
@@ -25,7 +29,7 @@ function M.load()
     DiffAdd = { fg = p.main.black, bg = p.main.green },
     DiffChange = { fg = p.main.black, bg = p.main.purple },
     DiffDelete = { fg = p.main.black, bg = p.main.maroon },
-    DiffText = { fg = p.main.black, bg = p.main.grey3 },
+    DiffText = { fg = p.main.black, bg = p.main.grey },
 
     Directory = { fg = p.main.celeste },
 
@@ -37,20 +41,21 @@ function M.load()
 
     TermCursor = { fg = p.main.black, bg = p.main.white},
 
-    Folded = { fg = p.main.grey6, bg = p.main.none },
+    Folded = { fg = p.main.lightGrey, bg = p.main.none },
+    FoldColumn = { fg = p.main.lightGrey, bg = p.main.none },
 
-    LineNr = { fg = p.main.grey3 },
-    LineNrBelow = { fg = p.main.grey3 },
-    SignColumn = { fg = p.main.none, bg = p.main.black },
+    LineNr = { fg = p.main.grey },
+    LineNrBelow = { fg = p.main.grey },
+    SignColumn = { fg = p.main.none, bg = p.main.none },
 
     MatchParen = { fg = p.main.gold, bg = p.main.none },
 
-    NonText = { fg = p.main.grey3 },
-    Normal = { fg = p.main.grey6, bg = p.main.none },
-    NormalFloat = { fg = p.main.grey6, bg = p.main.none },
+    NonText = { fg = p.main.grey },
+    Normal = { fg = p.main.lightGrey, bg = p.main.none },
+    NormalFloat = { fg = p.main.lightGrey, bg = p.main.none },
 
     Pmenu = { fg = p.main.white, bg = p.main.black },
-    PmenuSel = { fg = p.main.black, bg = p.main.grey4 },
+    PmenuSel = { fg = p.main.black, bg = p.main.grey },
     PmenuMatch = { fg = p.main.white },
     PmenuMatchSel = { fg = p.main.white },
     PmenuSbar = { fg = p.main.white, bg = p.main.black },
@@ -66,22 +71,23 @@ function M.load()
     SpellLocal = { undercurl = true, sp = p.main.green },
     SpellRare = { undercurl = true, sp = p.main.blue },
 
-    StatusLine = { fg = p.main.white, bg = p.main.black },
-    StatusLineNC = { fg = p.main.grey4, bg = p.main.black, },
+    StatusLine = { fg = p.main.white, bg = p.main.none },
+    StatusLineNC = { fg = p.main.grey, bg = p.main.none, },
+    StatusLineTerm = { fg = p.main.white, bg = p.main.none },
 
-    Visual = { fg = p.main.white, bg = p.main.grey1 },
+    Visual = { fg = p.main.white, bg = p.main.darkGrey },
 
-    WinBar = { fg = p.main.white, bg = p.main.grey3 },
-    WinBarNC = { fg = p.main.grey6, bg = p.main.grey1 },
-    WildMenu = { fg = p.main.white, bg = p.main.black },
+    WinBar = { fg = p.main.white, bg = p.main.grey },
+    WinBarNC = { fg = p.main.lightGrey, bg = p.main.darkGrey },
+    WildMenu = { fg = p.main.white, bg = p.main.none },
     WinSeparator = { fg = p.main.white },
 
-    TabLine = { fg = p.main.white, bg = p.main.black },
-    TabLineFill = { fg = p.main.white, bg = p.main.black },
+    TabLine = { fg = p.main.white, bg = p.main.none },
+    TabLineFill = { fg = p.main.white, bg = p.main.none },
     TabLineSel = { fg = p.main.black, bg = p.main.white },
 
     -- Syntax Groups
-    Comment = { fg = p.main.grey4, italic = false }, --any comment
+    Comment = { fg = p.main.grey, italic = false }, --any comment
 
     Constant = { fg = p.main.blue }, --any constant
     String = { fg = p.main.green }, --a string constant: "this is a string"
@@ -120,7 +126,7 @@ function M.load()
     Debug = { fg = p.main.yellow },--debugging statements
 
     Underline = { fg = p.main.maroon },--text that stands out, HTML links
-    Ignore = { fg = p.main.grey3 },--left blank, hidden  hl-Ignore
+    Ignore = { fg = p.main.grey },--left blank, hidden  hl-Ignore
     Error = { fg = p.main.red },--any erroneous construct
     Todo = { fg = p.main.black, bg = p.main.cyan },--anything that needs extra attention; mostly the keyword TODO FIXME and XXX
 
@@ -138,7 +144,7 @@ function M.load()
     ["@keyword.repeat"] = { fg = p.main.teal },--keywords related to loops (e.g. `for`, `while`)
     ["@keyword.return"] = { fg = p.main.pink }, --keywords like `return` and `yield`
 
-    ["@punctuation.bracket"] = { fg = p.main.grey6 }, --brackets (e.g. `()`, `{}`, `[]`)
+    ["@punctuation.bracket"] = { fg = p.main.lightGrey }, --brackets (e.g. `()`, `{}`, `[]`)
   }
 
   for group, settings in pairs(groups) do

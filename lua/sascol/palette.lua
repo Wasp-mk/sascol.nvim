@@ -11,12 +11,9 @@ palette.primary = {
 
 palette.main = {
   black = "#000000",
-  grey1 = "#22222f",
-  grey2 = "#333344",
-  grey3 = "#565968",
-  grey4 = "#6c7086",
-  grey5 = "#9498b2",
-  grey6 = "#b3bcce",
+  darkGrey = "#333344",
+  grey = "#777788",
+  lightGrey = "#aaaabb",
   white = "#ffffff",
   red = "#fF4040",
   maroon = "#F87171",
