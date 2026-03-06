@@ -54,12 +54,12 @@ function M.load()
     Normal = { fg = p.main.lightGrey, bg = p.main.none },
     NormalFloat = { fg = p.main.lightGrey, bg = p.main.none },
 
-    Psmenu = { fg = p.main.white, bg = p.main.none },
+    Pmenu = { fg = p.main.lightGrey, bg = p.main.none },
     PmenuSel = { fg = p.main.black, bg = p.main.lightGrey },
     PmenuMatch = { fg = p.main.white },
     PmenuMatchSel = { fg = p.main.white },
-    PmenuSbar = { fg = p.main.white, bg = p.main.black },--scrollbar
-    PmenuThumb = { bg = p.main.white },--scrollBar
+    PmenuSbar = { fg = p.main.lightGrey, bg = p.main.black },--scrollbar
+    PmenuThumb = { bg = p.main.lightGrey },--scrollBar
 
     IncSearch = { fg = p.main.black, bg = p.main.magenta },
     Substitute = { fg = p.main.black, bg = p.main.yellow },
