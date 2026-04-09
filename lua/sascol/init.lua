@@ -54,7 +54,7 @@ function M.load()
     Normal = { fg = p.main.lightGrey, bg = p.main.none },
     NormalFloat = { fg = p.main.lightGrey, bg = p.main.none },
 
-    Pmenu = { fg = p.main.lightGrey, bg = p.main.none },
+    Pmenu = { fg = p.main.lightGrey, bg = p.main.black },
     PmenuSel = { fg = p.main.black, bg = p.main.lightGrey },
     PmenuMatch = { fg = p.main.white },
     PmenuMatchSel = { fg = p.main.white },
@@ -79,7 +79,7 @@ function M.load()
 
     WinBar = { fg = p.main.white, bg = p.main.darkGrey },
     WinBarNC = { fg = p.main.lightGrey, bg = p.main.darkGrey },
-    WildMenu = { fg = p.main.white, bg = p.main.none },
+    WildMenu = { fg = p.main.white, bg = p.main.black },
     WinSeparator = { fg = p.main.white },
 
     TabLine = { fg = p.main.white, bg = p.main.black },
