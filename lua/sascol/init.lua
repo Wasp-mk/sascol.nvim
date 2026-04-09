@@ -48,18 +48,19 @@ function M.load()
     LineNrBelow = { fg = p.main.grey },
     SignColumn = { fg = p.main.none, bg = p.main.none },
 
-    MatchParen = { fg = p.main.gold, bg = p.main.none },
+    MatchParen = { fg = p.main.gold, bg = p.main.magenta },
 
     NonText = { fg = p.main.grey },
     Normal = { fg = p.main.lightGrey, bg = p.main.none },
-    NormalFloat = { fg = p.main.lightGrey, bg = p.main.none },
+    NormalFloat = { fg = p.main.lightGrey, bg = p.main.black },
 
     Pmenu = { fg = p.main.lightGrey, bg = p.main.black },
     PmenuSel = { fg = p.main.black, bg = p.main.lightGrey },
-    PmenuMatch = { fg = p.main.white },
-    PmenuMatchSel = { fg = p.main.white },
+    PmenuMatch = { fg = p.main.white, bg = p.main.black },
+    PmenuMatchSel = { fg = p.main.white, bg = p.main.black },
     PmenuSbar = { fg = p.main.lightGrey, bg = p.main.black },--scrollbar
     PmenuThumb = { bg = p.main.lightGrey },--scrollBar
+    WildMenu = { fg = p.main.white, bg = p.main.none },
 
     IncSearch = { fg = p.main.black, bg = p.main.magenta },
     Substitute = { fg = p.main.black, bg = p.main.yellow },
@@ -79,12 +80,11 @@ function M.load()
 
     WinBar = { fg = p.main.white, bg = p.main.darkGrey },
     WinBarNC = { fg = p.main.lightGrey, bg = p.main.darkGrey },
-    WildMenu = { fg = p.main.white, bg = p.main.black },
     WinSeparator = { fg = p.main.white },
 
     TabLine = { fg = p.main.white, bg = p.main.black },
-    TabLineFill = { fg = p.main.white, bg = p.main.black },
     TabLineSel = { fg = p.main.black, bg = p.main.white },
+    TabLineFill = { fg = p.main.white, bg = p.main.none },
 
     -- Syntax Groups
     Comment = { fg = p.main.grey, italic = false }, --any comment
