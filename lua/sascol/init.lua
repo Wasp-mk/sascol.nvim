@@ -14,7 +14,7 @@ function M.load()
     -- UI Groups
     ColorColumn = { bg = p.main.grey },
 
-    Conceal = { fg = p.main.grey },
+    Conceal = { fg = p.main.lightGrey },
 
     CursorColumn = { bg = p.main.grey },
     CursorLine = { bg = p.main.grey },
@@ -60,7 +60,7 @@ function M.load()
     PmenuMatchSel = { fg = p.main.white, bg = p.main.black },
     PmenuSbar = { fg = p.main.lightGrey, bg = p.main.black },--scrollbar
     PmenuThumb = { bg = p.main.lightGrey },--scrollBar
-    WildMenu = { fg = p.main.white, bg = p.main.none },
+    WildMenu = { fg = p.main.lightGrey, bg = p.main.black },
 
     IncSearch = { fg = p.main.black, bg = p.main.magenta },
     Substitute = { fg = p.main.black, bg = p.main.lightYellow },
@@ -72,14 +72,15 @@ function M.load()
     SpellLocal = { undercurl = true, sp = p.main.lightGreen },
     SpellRare = { undercurl = true, sp = p.main.blue },
 
-    StatusLine = { fg = p.main.white, bg = p.main.none },
-    StatusLineNC = { fg = p.main.grey, bg = p.main.none, },
-    StatusLineTerm = { fg = p.main.white, bg = p.main.none },
-
     Visual = { fg = p.main.none, bg = p.main.grey },
 
-    WinBar = { fg = p.main.white, bg = p.main.grey },
-    WinBarNC = { fg = p.main.lightGrey, bg = p.main.grey },
+    StatusLine = { fg = p.main.white, bg = p.main.black },
+    StatusLineNC = { fg = p.main.lightgrey, bg = p.main.black, },
+    StatusLineTerm = { fg = p.main.white, bg = p.main.black },
+    StatusLineTermNC = { fg = p.main.lightGrey, bg = p.main.black },
+
+    WinBar = { fg = p.main.white, bg = p.main.black },
+    WinBarNC = { fg = p.main.lightGrey, bg = p.main.black },
     WinSeparator = { fg = p.main.white },
 
     TabLine = { fg = p.main.white, bg = p.main.black },
