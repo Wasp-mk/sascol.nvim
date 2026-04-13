@@ -21,7 +21,7 @@ function M.load()
     CursorLineNr = { fg = p.main.yellow },
 
     DiagnosticError = { fg = p.main.red },
-    DiagnosticHint = { fg = p.main.cyan },
+    DiagnosticHint = { fg = p.main.lightBlue },
     DiagnosticInfo = { fg = p.main.lightYellow },
     DiagnosticOk = { fg = p.main.lightGreen },
     DiagnosticWarn = { fg = p.main.yellow },
@@ -73,6 +73,7 @@ function M.load()
     SpellRare = { undercurl = true, sp = p.main.blue },
 
     Visual = { fg = p.main.none, bg = p.main.grey },
+    whitespace = { fg = p.main.lightGrey },
 
     StatusLine = { fg = p.main.white, bg = p.main.black },
     StatusLineNC = { fg = p.main.lightgrey, bg = p.main.black, },
@@ -112,7 +113,7 @@ function M.load()
     Include = { fg = p.main.lightRed },--preprocessor #include
     Define = { fg = p.main.lightBlue },--preprocessor #define
     Macro = { fg = p.main.pink },--same as Define
-    PreCondit = { fg = p.main.cyan },--preprocessor #if, #else, #endif, etc.
+    PreCondit = { fg = p.main.lightBlue },--preprocessor #if, #else, #endif, etc.
 
     Type = { fg = p.main.lightBlue },--int, long, char, etc.
     StorageClass = { fg = p.main.lightBlue },--static, register, volatile, etc.
@@ -129,7 +130,7 @@ function M.load()
     Underline = { fg = p.main.lightRed },--text that stands out, HTML links
     Ignore = { fg = p.main.grey },--left blank, hidden  hl-Ignore
     Error = { fg = p.main.red },--any erroneous construct
-    Todo = { fg = p.main.black, bg = p.main.cyan },--anything that needs extra attention; mostly the keyword TODO FIXME and XXX
+    Todo = { fg = p.main.black, bg = p.main.lightBlue },--anything that needs extra attention; mostly the keyword TODO FIXME and XXX
 
     Added = { fg = p.main.lightGreen },--added line in a diff
     Changed = { fg = p.main.lightYellow },--changed line in a diff
