@@ -3,6 +3,8 @@ local base = {
   -- UI Groups
   ColorColumn = { bg = p.extra.grey3 },
 
+  Cursor = { fg = 'none', bg = p.main.white },
+
   CursorColumn = { bg = p.extra.grey3 },
   CursorLine = { bg = p.extra.grey3 },
 
@@ -41,7 +43,7 @@ local base = {
   LineNrBelow = { fg = p.extra.grey4 },
   SignColumn = { fg = 'none', bg = 'none' },
 
-  MatchParen = { fg = p.main.yellow1, bg = p.main.magenta1 },
+  MatchParen = { fg = p.main.yellow1, bg = 'none' },
 
   NonText = { fg = p.main.grey2 },
   Normal = { fg = p.main.grey2, bg = 'none' },
@@ -123,7 +125,7 @@ local base = {
   Underline = { fg = p.main.red2 },--text that stands out, HTML links
   Ignore = { fg = p.main.grey1 },--left blank, hidden  hl-Ignore
   Error = { fg = p.main.red1 },--any erroneous construct
-  Todo = { fg = p.main.black, bg = p.main.blue2 },--anything that needs extra attention; mostly the keyword TODO FIXME and XXX
+  Todo = { fg = p.main.black, bg = p.main.blue2 },--anything that needs attention; mostly the keyword TODO FIXME and XXX
 
   Added = { fg = p.main.green2 },--added line in a diff
   Changed = { fg = p.main.yellow2 },--changed line in a diff
