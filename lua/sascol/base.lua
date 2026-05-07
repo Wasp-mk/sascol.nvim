@@ -12,7 +12,7 @@ local base = {
 
   DiagnosticError = { fg = p.main.red1 },
   DiagnosticHint = { fg = p.main.cyan2 },
-  DiagnosticInfo = { fg = p.main.yellow2 },
+  DiagnosticInfo = { fg = p.main.blue1 },
   DiagnosticOk = { fg = p.main.green2 },
   DiagnosticWarn = { fg = p.main.yellow1 },
 
