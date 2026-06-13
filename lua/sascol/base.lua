@@ -3,7 +3,8 @@ local base = {
   -- UI Groups
   ColorColumn = { bg = p.extra.grey3 },
 
-  Cursor = { fg = 'none', bg = p.main.white },
+  Cursor = { fg = 'NONE', bg = p.main.white },
+  lCursor = { fg = 'NONE', bg = p.main.white },
 
   CursorColumn = { bg = p.extra.grey3 },
   CursorLine = { bg = p.extra.grey3 },
@@ -35,18 +36,18 @@ local base = {
 
   TermCursor = { fg = p.main.black, bg = p.main.white},
 
-  Folded = { fg = p.main.grey2, bg = 'none' },
-  FoldColumn = { fg = p.main.grey2, bg = 'none' },
+  Folded = { fg = p.main.grey2, bg = 'NONE' },
+  FoldColumn = { fg = p.main.grey2, bg = 'NONE' },
 
   CursorLineNr = { fg = p.main.yellow1 },
   LineNr = { fg = p.extra.grey4 },
   LineNrBelow = { fg = p.extra.grey4 },
-  SignColumn = { fg = 'none', bg = 'none' },
+  SignColumn = { fg = 'NONE', bg = 'NONE' },
 
-  MatchParen = { fg = p.main.yellow1, bg = 'none' },
+  MatchParen = { fg = p.main.white, bg = p.main.grey1 },
 
   NonText = { fg = p.main.grey2 },
-  Normal = { fg = p.main.grey2, bg = 'none' },
+  Normal = { fg = p.main.grey2, bg = 'NONE' },
   NormalFloat = { fg = p.main.grey2, bg = p.main.black },
 
   Pmenu = { fg = p.main.grey2, bg = p.main.black },
@@ -62,12 +63,12 @@ local base = {
   Search = { fg = p.main.black, bg = p.main.yellow1 },
   CurSearch = { fg = p.main.black, bg = p.main.magenta1 },
 
-  SpellBad = { undercurl = true, sp = p.main.red2 },
-  SpellCap = { undercurl = true, sp = p.main.yellow2 },
-  SpellLocal = { undercurl = true, sp = p.main.green2 },
-  SpellRare = { undercurl = true, sp = p.main.blue1 },
+  SpellBad = { undercurl = true, fg = p.main.red1, bg = 'NONE', sp = p.main.red2 },
+  SpellCap = { undercurl = true, fg = p.main.yellow1, bg = 'NONE', sp = p.main.yellow2 },
+  SpellLocal = { undercurl = true, fg = p.main.green1, bg = 'NONE', sp = p.main.green2 },
+  SpellRare = { undercurl = true, fg = p.main.blue1, bg = 'NONE', sp = p.main.blue1 },
 
-  Visual = { fg = 'none', bg = p.extra.grey3 },
+  Visual = { fg = 'NONE', bg = p.extra.grey3 },
   whitespace = { fg = p.main.grey1 },
 
   StatusLine = { fg = p.main.white, bg = p.main.black },
@@ -81,7 +82,7 @@ local base = {
 
   TabLine = { fg = p.main.white, bg = p.main.black },
   TabLineSel = { fg = p.main.black, bg = p.main.white },
-  TabLineFill = { fg = p.main.white, bg = 'none' },
+  TabLineFill = { fg = p.main.white, bg = 'NONE' },
 
   -- Syntax Groups
   Comment = { fg = p.extra.grey4, italic = false }, --any comment
@@ -122,7 +123,7 @@ local base = {
   SpecialComment = { fg = p.main.yellow2 },--special things inside a comment
   Debug = { fg = p.main.yellow2 },--debugging statements
 
-  Underline = { fg = p.main.red2 },--text that stands out, HTML links
+  Underlined = { fg = p.main.red2 },--text that stands out, HTML links
   Ignore = { fg = p.main.grey1 },--left blank, hidden  hl-Ignore
   Error = { fg = p.main.red1 },--any erroneous construct
   Todo = { fg = p.main.black, bg = p.main.blue2 },--anything that needs attention; mostly the keyword TODO FIXME and XXX
