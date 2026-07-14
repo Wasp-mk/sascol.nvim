@@ -1,13 +1,13 @@
 local p = require('sascol.palette')
 local base = {
   -- UI Groups
-  ColorColumn = { bg = p.extra.grey3 },
+  ColorColumn = { bg = p.greys.b1grey3 },
 
-  Cursor = { fg = 'NONE', bg = p.main.white },
-  lCursor = { fg = 'NONE', bg = p.main.white },
+  Cursor = { fg = p.extra.none, bg = p.main.white },
+  lCursor = { fg = p.extra.none, bg = p.main.white },
 
-  CursorColumn = { bg = p.extra.grey3 },
-  CursorLine = { bg = p.extra.grey3 },
+  CursorColumn = { bg = p.greys.b1grey3 },
+  CursorLine = { bg = p.greys.b1grey3 },
 
   Conceal = { fg = p.main.grey1 },
 
@@ -36,18 +36,18 @@ local base = {
 
   TermCursor = { fg = p.main.black, bg = p.main.white},
 
-  Folded = { fg = p.main.grey2, bg = 'NONE' },
-  FoldColumn = { fg = p.main.grey2, bg = 'NONE' },
+  Folded = { fg = p.main.grey2, bg = p.extra.none },
+  FoldColumn = { fg = p.main.grey2, bg = p.extra.none },
 
   CursorLineNr = { fg = p.main.yellow1 },
-  LineNr = { fg = p.extra.grey4 },
-  LineNrBelow = { fg = p.extra.grey4 },
-  SignColumn = { fg = 'NONE', bg = 'NONE' },
+  LineNr = { fg = p.greys.b1grey7 },
+  LineNrBelow = { fg = p.greys.b1grey7 },
+  SignColumn = { fg = p.extra.none, bg = p.extra.none },
 
   MatchParen = { fg = p.main.white, bg = p.main.grey1 },
 
   NonText = { fg = p.main.grey2 },
-  Normal = { fg = p.main.grey2, bg = 'NONE' },
+  Normal = { fg = p.main.grey2, bg = p.extra.none },
   NormalFloat = { fg = p.main.grey2, bg = p.main.black },
 
   Pmenu = { fg = p.main.grey2, bg = p.main.black },
@@ -63,12 +63,12 @@ local base = {
   Search = { fg = p.main.black, bg = p.main.yellow1 },
   CurSearch = { fg = p.main.black, bg = p.main.magenta1 },
 
-  SpellBad = { undercurl = true, fg = p.main.red1, bg = 'NONE', sp = p.main.red2 },
-  SpellCap = { undercurl = true, fg = p.main.yellow1, bg = 'NONE', sp = p.main.yellow2 },
-  SpellLocal = { undercurl = true, fg = p.main.green1, bg = 'NONE', sp = p.main.green2 },
-  SpellRare = { undercurl = true, fg = p.main.blue1, bg = 'NONE', sp = p.main.blue1 },
+  SpellBad = { undercurl = true, fg = p.main.red1, bg = p.extra.none, sp = p.main.red2 },
+  SpellCap = { undercurl = true, fg = p.main.yellow1, bg = p.extra.none, sp = p.main.yellow2 },
+  SpellLocal = { undercurl = true, fg = p.main.green1, bg = p.extra.none, sp = p.main.green2 },
+  SpellRare = { undercurl = true, fg = p.main.blue1, bg = p.extra.none, sp = p.main.blue1 },
 
-  Visual = { fg = 'NONE', bg = p.extra.grey3 },
+  Visual = { fg = p.extra.none, bg = p.greys.b1grey3 },
   whitespace = { fg = p.main.grey1 },
 
   StatusLine = { fg = p.main.white, bg = p.main.black },
@@ -82,10 +82,10 @@ local base = {
 
   TabLine = { fg = p.main.white, bg = p.main.black },
   TabLineSel = { fg = p.main.black, bg = p.main.white },
-  TabLineFill = { fg = p.main.white, bg = 'NONE' },
+  TabLineFill = { fg = p.main.white, bg = p.extra.none },
 
   -- Syntax Groups
-  Comment = { fg = p.extra.grey4, italic = false }, --any comment
+  Comment = { fg = p.greys.b1grey7, italic = false }, --any comment
 
   Constant = { fg = p.main.blue1 }, --any constant
   String = { fg = p.main.green2 }, --a string constant: "this is a string"

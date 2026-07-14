@@ -3,8 +3,8 @@ local palette = {}
 palette.main = {
   black = "#000000",
   white = "#ffffff",
-  grey1 = "#555566",
-  grey2 = "#aaaabb",
+  grey1 = "#555555",
+  grey2 = "#aaaaaa",
   red1 = "#fF4040",
   red2 = "#F87171",
   green1 = "#17b283",
@@ -24,8 +24,12 @@ palette.extra = {
   pink2 = "#f4a8d0",
   orange1 = "#f96102",
   orange2 = "#f98136",
-  grey3 = "#333344",
-  grey4 = "#777788",
+  none = "NONE",
+}
+
+palette.greys = {
+  b1grey3 = "#333344",
+  b1grey7 = "#777788",
 }
 
 return palette
