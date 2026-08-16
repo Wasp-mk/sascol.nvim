@@ -50,13 +50,13 @@ local base = {
   Normal = { fg = p.main.grey2, bg = p.extra.none },
   NormalFloat = { fg = p.main.grey2, bg = p.main.black },
 
-  Pmenu = { fg = p.main.grey2, bg = p.main.black },
-  PmenuSel = { fg = p.main.black, bg = p.main.grey2 },
+  Pmenu = { fg = p.main.white, bg = p.main.black },
+  PmenuSel = { fg = p.main.black, bg = p.main.white },
   PmenuMatch = { fg = p.main.white, bg = p.main.black },
   PmenuMatchSel = { fg = p.main.white, bg = p.main.black },
-  PmenuSbar = { fg = p.main.grey2, bg = p.main.black },--scrollbar
-  PmenuThumb = { bg = p.main.grey2 },--scrollBar
-  WildMenu = { fg = p.main.grey2, bg = p.main.black },
+  PmenuSbar = { fg = p.main.white, bg = p.main.black },--scrollbar
+  PmenuThumb = { bg = p.main.white },--scrollBar
+  WildMenu = { fg = p.main.white, bg = p.main.black },
 
   IncSearch = { fg = p.main.black, bg = p.main.magenta1 },
   Substitute = { fg = p.main.black, bg = p.main.yellow2 },
@@ -71,8 +71,8 @@ local base = {
   Visual = { fg = p.extra.none, bg = p.greys.b1grey3 },
   whitespace = { fg = p.main.grey1 },
 
-  StatusLine = { fg = p.main.white, bg = p.main.black },
-  StatusLineNC = { fg = p.main.grey2, bg = p.main.black, },
+  StatusLine = { fg = p.main.black, bg = p.main.white },
+  StatusLineNC = { fg = p.greys.b1greyd, bg = p.greys.b1grey2, },
   StatusLineTerm = { fg = p.main.white, bg = p.main.black },
   StatusLineTermNC = { fg = p.main.grey2, bg = p.main.black },
 
@@ -126,7 +126,7 @@ local base = {
   Underlined = { fg = p.main.red2 },--text that stands out, HTML links
   Ignore = { fg = p.main.grey1 },--left blank, hidden  hl-Ignore
   Error = { fg = p.main.red1 },--any erroneous construct
-  Todo = { fg = p.main.black, bg = p.main.blue2 },--anything that needs attention; mostly the keyword TODO FIXME and XXX
+  Todo = { fg = p.main.black, bg = p.main.cyan1 },--anything that needs attention; mostly the keyword TODO FIXME and XXX
 
   Added = { fg = p.main.green2 },--added line in a diff
   Changed = { fg = p.main.yellow2 },--changed line in a diff

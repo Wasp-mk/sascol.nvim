@@ -5,8 +5,8 @@ palette.main = {
   white = "#ffffff",
   grey1 = "#555555",
   grey2 = "#aaaaaa",
-  red1 = "#fF4040",
-  red2 = "#F87171",
+  red1 = "#ff4040",
+  red2 = "#f87171",
   green1 = "#17b283",
   green2 = "#afe067",
   blue1 = "#1E90FF",
@@ -20,7 +20,7 @@ palette.main = {
 }
 
 palette.extra = {
-  pink1 = "#F472B6",
+  pink1 = "#f472f6",
   pink2 = "#f4a8d0",
   orange1 = "#f96102",
   orange2 = "#f98136",
@@ -28,8 +28,20 @@ palette.extra = {
 }
 
 palette.greys = {
+  b1grey1 = "#111122",
+  b1grey2 = "#222233",
   b1grey3 = "#333344",
+  b1grey4 = "#444455",
+  b1grey5 = "#555566",
+  b1grey6 = "#666677",
   b1grey7 = "#777788",
+  b1grey8 = "#888899",
+  b1grey9 = "#9999aa",
+  b1greya = "#aaaabb",
+  b1greyb = "#bbbbcc",
+  b1greyc = "#ccccdd",
+  b1greyd = "#ddddee",
+  b1greye = "#eeeeff",
 }
 
 return palette
