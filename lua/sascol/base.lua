@@ -1,13 +1,13 @@
 local p = require('sascol.palette')
 local base = {
   -- UI Groups
-  ColorColumn = { bg = p.greys.b1grey3 },
+  ColorColumn = { bg = p.greys.b1grey2 },
 
-  Cursor = { fg = p.extra.none, bg = p.main.white },
-  lCursor = { fg = p.extra.none, bg = p.main.white },
+  Cursor = { fg = p.main.black, bg = p.main.white },
+  lCursor = { fg = p.main.black, bg = p.main.white },
 
-  CursorColumn = { bg = p.greys.b1grey3 },
-  CursorLine = { bg = p.greys.b1grey3 },
+  CursorColumn = { bg = p.greys.b1grey2 },
+  CursorLine = { bg = p.greys.b1grey2 },
 
   Conceal = { fg = p.main.grey1 },
 
@@ -46,7 +46,7 @@ local base = {
 
   MatchParen = { fg = p.main.white, bg = p.main.grey1 },
 
-  NonText = { fg = p.main.grey2 },
+  NonText = { fg = p.main.grey2 }, --"eol", "extends" and "precedes"
   Normal = { fg = p.main.grey2, bg = p.extra.none },
   NormalFloat = { fg = p.main.grey2, bg = p.main.black },
 
@@ -69,7 +69,7 @@ local base = {
   SpellRare = { undercurl = true, fg = p.main.blue1, bg = p.extra.none, sp = p.main.blue1 },
 
   Visual = { fg = p.extra.none, bg = p.greys.b1grey3 },
-  whitespace = { fg = p.main.grey1 },
+  Whitespace = { fg = p.greys.grey3 }, --"nbsp", "space", "tab", "multispace", "lead" and "trail"
 
   StatusLine = { fg = p.main.black, bg = p.main.white },
   StatusLineNC = { fg = p.greys.b1greyd, bg = p.greys.b1grey2, },
@@ -113,7 +113,7 @@ local base = {
 
   Type = { fg = p.main.blue2 },--int, long, char, etc.
   StorageClass = { fg = p.main.blue2 },--static, register, volatile, etc.
-  Structure = { fg = p.extra.pink1 },--struct, union, enum, etc.
+  Structure = { fg = p.extra.pink2 },--struct, union, enum, etc.
   Typedef = { fg = p.main.blue1 },--a typedef
 
   Special = { fg = p.main.blue2 },--any special symbol
