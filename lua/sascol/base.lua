@@ -1,15 +1,15 @@
 local p = require('sascol.palette')
 local base = {
   -- UI Groups
-  ColorColumn = { bg = p.greys.b1grey2 },
+  ColorColumn = { bg = p.greys.bgrey2 },
 
   Cursor = { fg = p.main.black, bg = p.main.white },
   lCursor = { fg = p.main.black, bg = p.main.white },
 
-  CursorColumn = { bg = p.greys.b1grey2 },
-  CursorLine = { bg = p.greys.b1grey2 },
+  CursorColumn = { bg = p.greys.bgrey2 },
+  CursorLine = { bg = p.greys.bgrey2 },
 
-  Conceal = { fg = p.main.grey1 },
+  Conceal = { fg = p.greys.ggrey5 },
 
   DiagnosticError = { fg = p.main.red1 },
   DiagnosticHint = { fg = p.main.cyan2 },
@@ -28,27 +28,27 @@ local base = {
   WarningMsg = { fg = p.main.yellow1, bg = p.main.black },
   ErrorMsg = { fg = p.main.red1, bg = p.main.black },
   StderrMsg = { fg = p.main.red1, bg = p.main.black },
-  StdoutMsg = { fg = p.main.grey2, bg = p.main.black },
+  StdoutMsg = { fg = p.greys.ggreya, bg = p.main.black },
   ModeMsg = { fg = p.main.yellow2, bg = p.main.black },
-  MsgArea = { fg = p.main.grey2, bg = p.main.black },
+  MsgArea = { fg = p.greys.ggreya, bg = p.main.black },
   MsgSeparator = { fg = p.main.white, bg = p.main.black },
   MoreMsg = { fg = p.main.blue1, bg = p.main.black },
 
   TermCursor = { fg = p.main.black, bg = p.main.white},
 
-  Folded = { fg = p.main.grey2, bg = p.extra.none },
-  FoldColumn = { fg = p.main.grey2, bg = p.extra.none },
+  Folded = { fg = p.greys.ggreya, bg = p.extra.none },
+  FoldColumn = { fg = p.greys.ggreya, bg = p.extra.none },
 
   CursorLineNr = { fg = p.main.yellow1 },
-  LineNr = { fg = p.greys.b1grey7 },
-  LineNrBelow = { fg = p.greys.b1grey7 },
+  LineNr = { fg = p.greys.bgrey7 },
+  LineNrBelow = { fg = p.greys.bgrey7 },
   SignColumn = { fg = p.extra.none, bg = p.extra.none },
 
-  MatchParen = { fg = p.main.white, bg = p.main.grey1 },
+  MatchParen = { fg = p.main.white, bg = p.greys.ggrey5 },
 
-  NonText = { fg = p.main.grey2 }, --"eol", "extends" and "precedes"
-  Normal = { fg = p.main.grey2, bg = p.extra.none },
-  NormalFloat = { fg = p.main.grey2, bg = p.main.black },
+  NonText = { fg = p.greys.ggreya }, --"eol", "extends" and "precedes"
+  Normal = { fg = p.greys.bgreyb, bg = p.extra.none },
+  NormalFloat = { fg = p.greys.bgreyb, bg = p.extra.none },
 
   Pmenu = { fg = p.main.white, bg = p.main.black },
   PmenuSel = { fg = p.main.black, bg = p.main.white },
@@ -68,16 +68,16 @@ local base = {
   SpellLocal = { undercurl = true, fg = p.main.green1, bg = p.extra.none, sp = p.main.green2 },
   SpellRare = { undercurl = true, fg = p.main.blue1, bg = p.extra.none, sp = p.main.blue1 },
 
-  Visual = { fg = p.extra.none, bg = p.greys.b1grey3 },
-  Whitespace = { fg = p.greys.grey3 }, --"nbsp", "space", "tab", "multispace", "lead" and "trail"
+  Visual = { fg = p.extra.none, bg = p.greys.bgrey3 },
+  Whitespace = { fg = p.greys.ggrey4 }, --"nbsp", "space", "tab", "multispace", "lead" and "trail"
 
   StatusLine = { fg = p.main.black, bg = p.main.white },
-  StatusLineNC = { fg = p.greys.b1greyd, bg = p.greys.b1grey2, },
+  StatusLineNC = { fg = p.greys.bgreyd, bg = p.greys.bgrey2, },
   StatusLineTerm = { fg = p.main.white, bg = p.main.black },
-  StatusLineTermNC = { fg = p.main.grey2, bg = p.main.black },
+  StatusLineTermNC = { fg = p.greys.ggreya, bg = p.main.black },
 
   WinBar = { fg = p.main.white, bg = p.main.black },
-  WinBarNC = { fg = p.main.grey2, bg = p.main.black },
+  WinBarNC = { fg = p.greys.ggreya, bg = p.main.black },
   WinSeparator = { fg = p.main.white },
 
   TabLine = { fg = p.main.white, bg = p.main.black },
@@ -85,7 +85,7 @@ local base = {
   TabLineFill = { fg = p.main.white, bg = p.extra.none },
 
   -- Syntax Groups
-  Comment = { fg = p.greys.b1grey7, italic = false }, --any comment
+  Comment = { fg = p.greys.bgrey6, italic = false }, --any comment
 
   Constant = { fg = p.main.blue1 }, --any constant
   String = { fg = p.main.green2 }, --a string constant: "this is a string"
@@ -124,7 +124,7 @@ local base = {
   Debug = { fg = p.main.yellow2 },--debugging statements
 
   Underlined = { fg = p.main.red2 },--text that stands out, HTML links
-  Ignore = { fg = p.main.grey1 },--left blank, hidden  hl-Ignore
+  Ignore = { fg = p.greys.ggrey5 },--left blank, hidden  hl-Ignore
   Error = { fg = p.main.red1 },--any erroneous construct
   Todo = { fg = p.main.black, bg = p.main.cyan1 },--anything that needs attention; mostly the keyword TODO FIXME and XXX
 
