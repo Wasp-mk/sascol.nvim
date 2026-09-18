@@ -24,7 +24,6 @@ palette.extra = {
   pink2 = "#f4a8d0",
   orange1 = "#f96102",
   orange2 = "#f98136",
-  none = "NONE",
 }
 
 palette.greys = {

@@ -36,19 +36,19 @@ local base = {
 
   TermCursor = { fg = p.main.black, bg = p.main.white},
 
-  Folded = { fg = p.greys.ggreya, bg = p.extra.none },
-  FoldColumn = { fg = p.greys.ggreya, bg = p.extra.none },
+  Folded = { fg = p.greys.ggreya, bg = "NONE" },
+  FoldColumn = { fg = p.greys.ggreya, bg = "NONE" },
 
   CursorLineNr = { fg = p.main.yellow1 },
   LineNr = { fg = p.greys.bgrey7 },
   LineNrBelow = { fg = p.greys.bgrey7 },
-  SignColumn = { fg = p.extra.none, bg = p.extra.none },
+  SignColumn = { fg = "NONE", bg = "NONE" },
 
   MatchParen = { fg = p.main.white, bg = p.greys.ggrey5 },
 
   NonText = { fg = p.greys.ggreya }, --"eol", "extends" and "precedes"
-  Normal = { fg = p.greys.bgreyb, bg = p.extra.none },
-  NormalFloat = { fg = p.greys.bgreyb, bg = p.extra.none },
+  Normal = { fg = p.greys.bgreyb, bg = "NONE" },
+  NormalFloat = { fg = p.greys.bgreyb, bg = "NONE" },
 
   Pmenu = { fg = p.main.white, bg = p.main.black },
   PmenuSel = { fg = p.main.black, bg = p.main.white },
@@ -63,12 +63,12 @@ local base = {
   Search = { fg = p.main.black, bg = p.main.yellow1 },
   CurSearch = { fg = p.main.black, bg = p.main.magenta1 },
 
-  SpellBad = { undercurl = true, fg = p.main.red1, bg = p.extra.none, sp = p.main.red2 },
-  SpellCap = { undercurl = true, fg = p.main.yellow1, bg = p.extra.none, sp = p.main.yellow2 },
-  SpellLocal = { undercurl = true, fg = p.main.green1, bg = p.extra.none, sp = p.main.green2 },
-  SpellRare = { undercurl = true, fg = p.main.blue1, bg = p.extra.none, sp = p.main.blue1 },
+  SpellBad = { undercurl = true, fg = p.main.red1, bg = "NONE", sp = p.main.red2 },
+  SpellCap = { undercurl = true, fg = p.main.yellow1, bg = "NONE", sp = p.main.yellow2 },
+  SpellLocal = { undercurl = true, fg = p.main.green1, bg = "NONE", sp = p.main.green2 },
+  SpellRare = { undercurl = true, fg = p.main.blue1, bg = "NONE", sp = p.main.blue1 },
 
-  Visual = { fg = p.extra.none, bg = p.greys.bgrey3 },
+  Visual = { fg = "NONE", bg = p.greys.bgrey3 },
   Whitespace = { fg = p.greys.ggrey4 }, --"nbsp", "space", "tab", "multispace", "lead" and "trail"
 
   StatusLine = { fg = p.main.black, bg = p.main.white },
@@ -82,7 +82,7 @@ local base = {
 
   TabLine = { fg = p.main.white, bg = p.main.black },
   TabLineSel = { fg = p.main.black, bg = p.main.white },
-  TabLineFill = { fg = p.main.white, bg = p.extra.none },
+  TabLineFill = { fg = p.main.white, bg = "NONE" },
 
   -- Syntax Groups
   Comment = { fg = p.greys.bgrey6, italic = false }, --any comment
