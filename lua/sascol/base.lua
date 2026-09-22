@@ -73,8 +73,8 @@ local base = {
 
   StatusLine = { fg = p.main.black, bg = p.main.white },
   StatusLineNC = { fg = p.greys.bgreyd, bg = p.greys.bgrey2, },
-  StatusLineTerm = { fg = p.main.white, bg = p.main.black },
-  StatusLineTermNC = { fg = p.greys.ggreya, bg = p.main.black },
+  StatusLineTerm = { fg = p.main.black, bg = p.main.white },
+  StatusLineTermNC = { fg = p.greys.bgreyd, bg = p.main.bgrey2 },
 
   WinBar = { fg = p.main.white, bg = p.main.black },
   WinBarNC = { fg = p.greys.ggreya, bg = p.main.black },
